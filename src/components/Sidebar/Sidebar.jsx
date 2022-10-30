@@ -15,6 +15,7 @@ const Sidebar = () => {
                 bottom: 0,
                 padding: '20px 20px',
                 borderRight: '1px solid #c5c5c5',
+                backgroundColor: '#F0F2F5',
             }}
         >
             <ListItems />

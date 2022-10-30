@@ -4,7 +4,7 @@ import { DeleteOutlined } from '@ant-design/icons'
 
 import styles from './Button.module.scss'
 
-const DeleteNoteBtn = () => {
+const DeleteNoteBtn = ({ onDeleteNote }) => {
   return (
     <Button
       className={styles.btn}
@@ -22,6 +22,7 @@ const DeleteNoteBtn = () => {
           backgroundColor: '#d6d6d6',
         }
       }}
+      onClick={() => onDeleteNote()}
     >
       <DeleteOutlined />
     </Button>

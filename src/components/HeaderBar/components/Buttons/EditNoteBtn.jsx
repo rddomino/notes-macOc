@@ -4,7 +4,7 @@ import { FormOutlined } from '@ant-design/icons'
 
 import styles from './Button.module.scss'
 
-const EditNoteBtn = () => (
+const EditNoteBtn = ({ onEditNote }) => (
   <Button
     className={styles.btn}
     style={{
@@ -20,8 +20,8 @@ const EditNoteBtn = () => (
       hover: {
         backgroundColor: '#d6d6d6',
       }
-
     }}
+    onClick={() => onEditNote()}
   >
     <FormOutlined />
   </Button>
